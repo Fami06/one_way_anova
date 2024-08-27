@@ -21,7 +21,7 @@ df = pd.DataFrame({
 
 import scipy.stats as stats
 
-# Repeated Measures ANOVAの実行
+# one way ANOVAの実行
 F_value, p_value = stats.f_oneway(df['Time1'], df['Time2'], df['Time3'], df['Time4'], df['Time5'], df['Time6'])
 
 print(f'F値: {F_value}')
